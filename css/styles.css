@@ -1,41 +1,73 @@
 body{
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-image: url('../images/maldives.jpg');
+  background-size: cover;
+  margin: 0;
+  transition: none;
 }
 header{
-
-}
-h1{
-  position: absolute;
-  display: flex;
-  margin-left: 15px;
-  margin-bottom: 0px;
-  font-size: 4em;
-}
-nav{
-  display: flex;
-  background-color: #00000090;
-  justify-content: space-around;
-  position: absolute;
-  top: 20.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: inline-block;
   width: 100%;
 }
-a{
-  font-weight: bold;
-  color: #00CCCC;
+.logo{
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+}
+nav{
+  background-color: #00000070;
+  background-size: cover;
+  backdrop-filter: blur 1.5px;
+}
+.link {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  padding: 10px;
+}
+.link a{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  transition: all .2s linear;
+  text-decoration: none;
+  color: #66ccff;
   padding: 10px;
 }
 a:hover{
-  background-color: #99999990;
-  transition: background .5s;
+  background-color: #ffffff20;
+  transform: scale(1.1);
+  /* color: #6699ff; */
 }
-.homepic{
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.main{
+  background-color: #00000070;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  backdrop-filter: blur(1.5px);
+}
+.mainhead{
+  display: flex;
+  justify-content: center;
+}
+.mainhead h1{
+  color:  #66ccff;
+  font-weight: 900;
+}
+.maintext{
+  display: flex;
+  justify-content: space-around;
+}
+.text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #66ccff;
+  padding-left:  10px;
+  padding-right: 10px;
+}
+.text h3{
+  font-size: 1em;
+}
+.text p{
+  font-size: 17px;
 }
