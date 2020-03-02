@@ -1,8 +1,8 @@
-//
 /* Global styles */
 body{
   background-image: url('../images/maldives.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 /* Tablet styles */
 @media screen and (min-width:500px) {
@@ -21,18 +21,16 @@ body{
     transition: none;
   }
   header{
-    display: inline-block;
     width: 100%;
+    background-color: #00000070;
+    background-size: cover;
+    backdrop-filter: blur 1.5px;
   }
   .logo{
     display: flex;
     justify-content: space-around;
     width: 10%;
-  }
-  nav{
-    background-color: #00000070;
-    background-size: cover;
-    backdrop-filter: blur 1.5px;
+
   }
   .link {
     display: flex;
@@ -42,7 +40,6 @@ body{
   }
   .link a{
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    transition: all .2s linear;
     text-decoration: none;
     color: #66ccff;
     padding: 10px;
@@ -50,7 +47,8 @@ body{
   a:hover{
     background-color: #ffffff20;
     transform: scale(1.1);
-    /* color: #6699ff; */
+    transition: all .2s linear;
+    color: #6699ff;
   }
   .main{
     background-color: #00000070;
@@ -73,6 +71,11 @@ body{
     display: flex;
     justify-content: space-around;
   }
+  .pkgmain{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
   .text{
     display: flex;
     justify-content: space-between;
@@ -86,5 +89,26 @@ body{
   }
   .text p{
     font-size: 1em;
+  }
+  .pkgs{
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .pkg{
+    height: 200px;
+    width: 300px;
+    overflow: none;
+  }
+  .pkg img{
+    width: 300px;
+  }
+  .pkg p{
+  }
+  .hotel{
+    font-weight: 900;
+  }
+  .hol p{
+    color: #00000099;
   }
 }
